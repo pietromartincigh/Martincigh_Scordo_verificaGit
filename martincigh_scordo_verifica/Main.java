@@ -12,6 +12,8 @@ public class Main {
 
         Aereoporto aereoporto = new Aereoporto("Mogadiscio", 57, aerei);
 
+        System.out.println("L'aereoporto di "+ aereoporto.getCitta()+ " ha superficie di "+aereoporto.getSuperficie()+" m^2;");
+
     }
     
 }
