@@ -1,23 +1,31 @@
 package martincigh_scordo_verifica;
 
-public class Aereoporto{
+public class Aeroporto{
 
     private String citta;
     private int superficie;
     private Aereo aerei[];
 
 
-    public Aereoporto(){
+    public Aeroporto(){
 
+        this.aerei= new Aereo[3];
+
+        for(int i=0; i<3; i++)
+        this.aerei[i]= new Aereo();
     }
 
-    public Aereoporto(String citta, int superficie, Aereo aerei[]){
+    public Aeroporto(String citta, int superficie, Aereo aerei[]){
+
+        this.aerei= new Aereo[3];
 
         this.citta=citta;
         this.superficie=superficie;
 
-        for(int i=0; i< aerei.length; i++)
+        for(int i=0; i< 3; i++){
+        this.aerei[i]=new Aereo();
         this.aerei[i]=aerei[i];
+        }
     }
 
 
@@ -46,7 +54,7 @@ public class Aereoporto{
 
     public void setAerei(Aereo aerei[]){
 
-        for(int i=0; i< aerei.length; i++)
+        for(int i=0; i< 3; i++)
         this.aerei[i]=aerei[i];
     }
 
