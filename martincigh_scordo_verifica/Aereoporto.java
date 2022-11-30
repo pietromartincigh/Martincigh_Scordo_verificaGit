@@ -32,7 +32,7 @@ public class Aereoporto{
 
     public void setAerei(Aereo aerei[]){
 
-        for(int i=0; i< aerei.lenght(); i++)
+        for(int i=0; i< aerei.length; i++)
         this.aerei[i]=aerei[i];
     }
 
