@@ -7,6 +7,20 @@ public class Aereoporto{
     private Aereo aerei[];
 
 
+    public Aereoporto(){
+
+    }
+
+    public Aereoporto(String citta, int superficie, Aereo aerei[]){
+
+        this.citta=citta;
+        this.superficie=superficie;
+
+        for(int i=0; i< aerei.length; i++)
+        this.aerei[i]=aerei[i];
+    }
+
+
     public void setCitta(String citta){
 
         this.citta=citta;
