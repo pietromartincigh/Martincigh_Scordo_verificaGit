@@ -11,9 +11,13 @@ public class Main {
         aerei[2]= new Aereo("EW8213HBL0", 5783, "Subaru", "Stuka");
 
         Aereoporto aereoporto = new Aereoporto("Mogadiscio", 57, aerei);
+        
 
-        System.out.println("L'aereoporto di "+ aereoporto.getCitta()+ " ha superficie di "+aereoporto.getSuperficie()+" m^2;");
+        System.out.printl("L'aeroporto di città " + aeroporto.getCitta() + "ha una superficie di " + aeroporto.getSuperficie() + "metri quadrati.");
 
+        for(int=0; i<3; i++){
+        System.out.println("Gli aerei disponibili sono: " + aerei[i].toString());
+        }
     }
     
 }

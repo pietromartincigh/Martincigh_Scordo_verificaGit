@@ -48,4 +48,10 @@ public String getModello(){
     return modello;
 }
 
+@Override 
+
+public String toString() {
+    return ("Codice: " + codice + "\nNumeroPosti: " + nPosti + "\nMarca: " + marca + "\nModello: " + modello);
+}
+
 }
