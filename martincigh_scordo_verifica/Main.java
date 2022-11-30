@@ -10,13 +10,18 @@ public class Main {
         aerei[1]= new Aereo("XCTY674O", 31, "Peugeot", "Schifo con le ali");
         aerei[2]= new Aereo("EW8213HBL0", 5783, "Subaru", "Stuka");
 
-        Aereoporto aeroporto = new Aereoporto("Mogadiscio", 57, aerei);
-        
+        Aeroporto aeroporto = new Aeroporto("Mogadiscio", 57, aerei);
+        /*Aeroporto aeroporto = new Aeroporto();
 
+        aeroporto.setCitta("Mogadisco");
+        aeroporto.setSuperficie(57);
+        aeroporto.setAerei(aerei);
+        
+*/
         System.out.println("L'aeroporto di città " + aeroporto.getCitta() + "ha una superficie di " + aeroporto.getSuperficie() + "metri quadrati.");
 
         for(int i =0; i<3; i++){
-        System.out.println("Gli aerei disponibili sono: " + aerei[i].toString());
+        System.out.println("\nAereo "+(1+i)+": " + aerei[i].toString());
         }
     }
     
